@@ -1,7 +1,5 @@
 <?php
 
-
-
 	class Backup {
 		private $config = [];
 
@@ -13,26 +11,25 @@
 				$filename = './config.json';
 			}
 			$this->config = $this->getConfiguration($filename);
-			
-			var_dump($this->config);
 
 			foreach($this->config as $config) {
-				$this->backup($config, ['--dry-run', '-av']);
-
+				$this->backup($config);
 			}
 		}
 
-
-		private function backup($ary, $args) {
+		private function backup($ary) {
 			$origin = $ary['origin'];
 			$destination = $ary['destination'];
+			$args = $ary['args'];
 
 			if(is_array($args)) {
 				$args = implode(" ", $args);
 			}
+
 			$command = "rsync {$args} {$origin} {$destination} \n";
+			echo $command;
 			exec($command, $out);
-			var_dump($out);
+			//var_dump($out);
 		}
 
 
