@@ -1,0 +1,10 @@
+[
+	{
+		"origin" : "/mnt/e/coldfire/MyDocuments",
+		"destination" : "coldfire@192.168.11.23:/home/share/"
+	},
+	{
+		"origin" : "/mnt/e/coldfire/MyMusic",
+		"destination" : "coldfire@192.168.11.23:/home/share/"
+	}
+]
