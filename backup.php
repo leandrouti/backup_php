@@ -29,9 +29,8 @@
 			$command = "rsync {$args} {$origin} {$destination} \n";
 			echo $command;
 			exec($command, $out);
-			//var_dump($out);
+			var_dump($out);
 		}
-
 
 		private function getConfiguration($filename) {
 			if( file_exists($filename) ) {

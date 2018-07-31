@@ -1,12 +1,17 @@
 [
 	{
 		"origin" : "/mnt/e/coldfire/MyDocuments",
-		"destination" : "coldfire@192.168.11.23:/home/share/",
-		"args" : ["-av", "--dry-run"]
+		"destination" : "coldfire@192.168.11.23:/home/coldfire/",
+		"args" : ["-av"]
 	},
 	{
 		"origin" : "/mnt/e/coldfire/MyMusic",
 		"destination" : "coldfire@192.168.11.23:/home/share/",
-		"args" : ["-av", "--dry-run"]
+		"args" : ["-av"]
+	},
+	{
+		"origin" : "/mnt/e/Books",
+		"destination" : "coldfire@192.168.11.23:/home/share/",
+		"args" : ["-av"]
 	}
 ]
